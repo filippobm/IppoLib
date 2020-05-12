@@ -18,6 +18,11 @@ namespace IppoLib
         {
 
         }
+        
+        public void DoNothing4()
+        {
+
+        }
 
         public string FormatMessage(string message)
         {
