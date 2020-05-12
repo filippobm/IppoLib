@@ -18,5 +18,10 @@ namespace IppoLib
         {
 
         }
+
+        public string FormatMessage(string message)
+        {
+            return $"Message: {message}";
+        }
     }
 }
