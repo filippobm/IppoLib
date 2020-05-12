@@ -19,6 +19,11 @@ namespace IppoLib
 
         }
 
+        public void DoNothing10()
+        {
+
+        }
+
         public string FormatMessage(string message)
         {
             return $"Message: {message}";
