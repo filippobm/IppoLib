@@ -1,32 +1,34 @@
 name: .NET Core
 
 on:
-  pull_request:
-    branches: 
+  push:
+    branches:
       - master
-    types: [closed]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.101
-        source-url: https://nuget.pkg.github.com/filippobm/index.json
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    - name: Install dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
-    - name: Create NuGet package
-      run: dotnet pack --configuration Release --output nupkgs
-    - name: Publish the package
-      run: dotnet nuget push nupkgs/*.nupkg
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.101
+          source-url: https://nuget.pkg.github.com/filippobm/index.json
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        
+      - name: Install dependencies
+        run: dotnet restore
+        
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+        
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
+        
+      - name: Create NuGet package
+        run: dotnet pack --configuration Release --output nupkgs
+        
+      - name: Publish the package
+        run: dotnet nuget push nupkgs/*.nupkg
