@@ -5,6 +5,14 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/filippobm/IppoLib</RepositoryUrl>
     <Version>2.0.0</Version>
-    <PackageIcon>https://i.postimg.cc/ncCF82PH/4813070.jpg</PackageIcon>
+    <PackageIcon>https:\i.postimg.cc\ncCF82PH\4813070.jpg</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Ippo\Pictures\4813070.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
