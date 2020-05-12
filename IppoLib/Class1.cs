@@ -8,5 +8,10 @@ namespace IppoLib
         {
 
         }
+
+        public void DoNothing2()
+        {
+
+        }
     }
 }
