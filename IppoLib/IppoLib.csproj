@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/filippobm/IppoLib</RepositoryUrl>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
 </Project>
