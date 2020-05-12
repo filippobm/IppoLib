@@ -13,5 +13,10 @@ namespace IppoLib
         {
 
         }
+
+        public void DoNothing3()
+        {
+
+        }
     }
 }
