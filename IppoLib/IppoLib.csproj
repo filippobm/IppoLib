@@ -4,7 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/filippobm/IppoLib</RepositoryUrl>
-    <Version>3.0.0</Version>
+    <Version>3.0.1</Version>
     <PackageIconUrl>https://i.postimg.cc/ncCF82PH/4813070.jpg</PackageIconUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>
