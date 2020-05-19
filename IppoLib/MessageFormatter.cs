@@ -7,5 +7,11 @@
             const string prefix = "message";
             return $"{prefix}: {message}";
         }
+
+        public string Print2(string message)
+        {
+            const string prefix = "message";
+            return $"{prefix}: {message}";
+        }
     }
 }
