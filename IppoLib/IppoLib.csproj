@@ -4,11 +4,13 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/filippobm/IppoLib.git</RepositoryUrl>
-		<Version>4.0.1</Version>
+		<Version>4.0.4</Version>
 		<PackageIconUrl>https://i.postimg.cc/ncCF82PH/4813070.jpg</PackageIconUrl>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 
 	<ItemGroup>
