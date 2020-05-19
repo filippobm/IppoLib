@@ -31,4 +31,6 @@ jobs:
         run: dotnet pack --configuration Release --output nupkgs
         
       - name: Publish the package
-        run: dotnet nuget push nupkgs/*.snupkg
+        run: |
+          dotnet nuget push nupkgs/*.nupkg
+          dotnet nuget push nupkgs/*.snupkg
